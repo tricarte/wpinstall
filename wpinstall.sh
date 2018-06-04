@@ -129,3 +129,6 @@ xdg-open "$URL/admin" &
 
 # Check that WP sends emails correctly
 # https://wordpress.org/plugins/check-email/
+
+# Modify wp_mail() to use a known smtp provider such gmail, mailgun, etc.
+# https://wordpress.org/plugins/wp-mail-smtp/
