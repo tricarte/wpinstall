@@ -126,3 +126,6 @@ xdg-open "$URL/admin" &
 
 # Auto enable dark mode at certain times
 # https://gist.github.com/danieltj27/8624d57c5e0f30465f963bc7838bbb7f
+
+# Check that WP sends emails correctly
+# https://wordpress.org/plugins/check-email/
