@@ -110,6 +110,7 @@ if [[ $INSTALL_PLUGINS = "--plugins" ]]; then
         shortcode-finder \
         wpsite-show-ids \
         dark-mode \
+        cron-view \
         --activate
 fi
 
