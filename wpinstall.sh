@@ -111,6 +111,7 @@ if [[ $INSTALL_PLUGINS = "--plugins" ]]; then
         wpsite-show-ids \
         dark-mode \
         cron-view \
+        regenerate-thumbnails \
         --activate
 fi
 
