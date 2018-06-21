@@ -6,7 +6,7 @@
 #
 # It is designed to work with DevilBox and requires WPCLI.
 # Usage:
-# wpinstall.sh directoryName [--plugins]
+# wpinstall.sh directoryName [--locale=en_US] [--plugins]
 #
 # Run the above command in data/www directory of devilbox.
 # It will create a wordpress installation accessable from
@@ -30,7 +30,8 @@ ADMINPASSWORD="123"
 
 # Read directory from params
 DIRNAME=$1
-INSTALL_PLUGINS=$2
+WPLANG=$2
+INSTALL_PLUGINS=$3
 
 # Derive varibles from directory name
 DBNAME="$DIRNAME"
@@ -56,7 +57,7 @@ cd "$DIRNAME/src";
 
 echo -e "$cYellow""Installing and configuring now...""$cWhite"
 
-wp core download
+wp core download "$WPLANG"
 wp config create \
     --dbname="$DBNAME" \
     --dbhost="$DBHOST" \
