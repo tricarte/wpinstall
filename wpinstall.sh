@@ -135,3 +135,6 @@ xdg-open "$URL/admin" &
 
 # Modify wp_mail() to use a known smtp provider such gmail, mailgun, etc.
 # https://wordpress.org/plugins/wp-mail-smtp/
+
+# Reset WordPress database to its original state
+# https://wordpress.org/plugins/wordpress-database-reset/ 
