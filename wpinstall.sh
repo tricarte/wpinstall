@@ -107,12 +107,13 @@ if [[ $INSTALL_PLUGINS = "--plugins" ]]; then
         ari-adminer \
         busted \
         wp-log-viewer \
-        reset-wp \
+        wp-reset \
         shortcode-finder \
         wpsite-show-ids \
         dark-mode \
         cron-view \
         regenerate-thumbnails \
+        postem-ipsum \
         --activate
 fi
 
@@ -136,5 +137,6 @@ xdg-open "$URL/admin" &
 # Modify wp_mail() to use a known smtp provider such gmail, mailgun, etc.
 # https://wordpress.org/plugins/wp-mail-smtp/
 
-# Reset WordPress database to its original state
-# https://wordpress.org/plugins/wordpress-database-reset/ 
+# Reset WordPress database to its original state.
+# Another database reset plugin.
+# https://wordpress.org/plugins/wordpress-database-reset/
