@@ -87,6 +87,9 @@ wp core install \
 # Set permalinks to post name.
 wp option update permalink_structure "/%postname%/"
 
+# Rename "Uncategorized" to "General"
+wp term update category 1 --slug=general --name=General
+
 if [[ $INSTALL_PLUGINS = "--plugins" ]]; then
     wp plugin install \
         debug-bar \
