@@ -150,5 +150,8 @@ xdg-open "$URL/admin" &
 # https://wordpress.org/plugins/wp-mail-smtp/
 
 # Reset WordPress database to its original state.
-# Another database reset plugin.
+# Another database reset plugin other than wp-reset.
 # https://wordpress.org/plugins/wordpress-database-reset/
+
+# Text editor with simple file manager.
+# https://wordpress.org/plugins/aceide/
