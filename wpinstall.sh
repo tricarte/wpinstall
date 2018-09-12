@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # ##################################################
 # A slightly modified version of this gist.
@@ -7,6 +8,8 @@
 # It is designed to work with DevilBox and requires WPCLI.
 # Usage:
 # wpinstall.sh directoryName [--locale=en_US] [--plugins]
+#
+# Note that arguments are positional not named.
 #
 # Run the above command in data/www directory of devilbox.
 # It will create a wordpress installation accessable from
@@ -30,7 +33,13 @@ ADMINPASSWORD="123"
 
 # Read directory from params
 DIRNAME=$1
-WPLANG=$2
+
+if [ -z "$2" ]; then
+    WPLANG="--locale=en_US"
+else
+    WPLANG="$2"
+fi
+
 INSTALL_PLUGINS=$3
 
 # Derive varibles from directory name
@@ -53,7 +62,7 @@ if [[ ! -d $DIRNAME ]]; then
 fi
 
 # Change to given directrory
-cd "$DIRNAME/src";
+cd "$DIRNAME/src" || exit
 
 echo -e "$cYellow""Installing and configuring now...""$cWhite"
 
