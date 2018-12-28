@@ -20,11 +20,11 @@ set -e
 
 read -p "Database host: " DBHOST
 read -p "Database user: " DBUSER
-echo
 read -sp "Password for the database user: " DBPASSWORD
-read -p "Login name for admin user: " ADMINUSER
 echo
+read -p "Login name for admin user: " ADMINUSER
 read -sp "Password for admin user: " ADMINPASSWORD
+echo
 read -p "Full site url: " URL
 read -p "Email addres for admin user: " EMAIL
 read -p "Enter database prefix: (eg: wp_): " DBPREFIX
