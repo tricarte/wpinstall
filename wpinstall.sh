@@ -27,6 +27,7 @@ echo
 read -sp "Password for admin user: " ADMINPASSWORD
 read -p "Full site url: " URL
 read -p "Email addres for admin user: " EMAIL
+read -p "Enter database prefix: (eg: wp_): " DBPREFIX
 
 # Read directory from params
 DIRNAME=$1
@@ -70,6 +71,7 @@ wp config create \
     --dbuser="$DBUSER" \
     --dbpass="$DBPASSWORD" \
     --dbcharset=utf8mb4 \
+    --dbprefix="$DBPREFIX" \
     --force \
     --skip-check \
     --extra-php <<PHP
