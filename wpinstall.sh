@@ -24,6 +24,7 @@ read -sp "Password for the database user: " DBPASSWORD
 echo
 read -p "Login name for admin user: " ADMINUSER
 read -sp "Password for admin user: " ADMINPASSWORD
+# FIXME: enter again
 echo
 read -p "Full site url: " URL
 read -p "Email addres for admin user: " EMAIL
@@ -114,7 +115,7 @@ if [[ $INSTALL_PLUGINS = "--plugins" ]]; then
         fancy-admin-ui \
         pluginception \
         monkeyman-rewrite-analyzer \
-        user-switching \
+        fast-user-switching \
         ari-adminer \
         busted \
         wp-log-viewer \

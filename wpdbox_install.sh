@@ -115,7 +115,7 @@ if [[ $INSTALL_PLUGINS = "--plugins" ]]; then
         fancy-admin-ui \
         pluginception \
         monkeyman-rewrite-analyzer \
-        user-switching \
+        fast-user-switching \
         ari-adminer \
         busted \
         wp-log-viewer \
